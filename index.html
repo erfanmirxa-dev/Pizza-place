@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pizza Place — Denham Springs, LA · Pizza, Po-Boys & Plates</title>
+<meta name="description" content="Pizza Place in Denham Springs, Louisiana. Wood-warm pizzas, overstuffed po-boys, muffalettas and seafood plates. 4.5 stars, 412 reviews. 34646 LA-16. Call (225) 664-8254." />
+<meta name="theme-color" content="#1a1410" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Pizza Place — Denham Springs, LA" />
+<meta property="og:description" content="“I've never had a bad pizza from here.” Pizza, po-boys & plates in Denham Springs. 4.5★ · 412 reviews." />
+<meta property="og:type" content="restaurant" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 8 L92 78 a48 18 0 0 1-84 0 Z' fill='%23e9b949'/%3E%3Cpath d='M50 20 L82 74 a36 12 0 0 1-64 0 Z' fill='%23f1c75a'/%3E%3Ccircle cx='40' cy='52' r='6' fill='%23c0341d'/%3E%3Ccircle cx='62' cy='50' r='5.5' fill='%23c0341d'/%3E%3Ccircle cx='50' cy='66' r='5' fill='%23c0341d'/%3E%3C/svg%3E" />
+
+<!-- Local business structured data (real details) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Pizza Place",
+  "servesCuisine": ["Pizza", "Po-Boys", "Cajun", "American"],
+  "priceRange": "$10–20",
+  "telephone": "+1-225-664-8254",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "34646 LA-16",
+    "addressLocality": "Denham Springs",
+    "addressRegion": "LA",
+    "postalCode": "70706",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "412"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "10:30", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "10:30", "closes": "20:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:30", "closes": "20:00"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ SHARED SVG DEFS: 3D pizza logo + ripple filter ============ -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <!-- Animated water-ripple displacement -->
+    <filter id="ripple" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009 0.013" numOctaves="2" seed="7" result="noise">
+        <animate attributeName="baseFrequency" dur="14s" keyTimes="0;0.5;1"
+                 values="0.009 0.013;0.014 0.009;0.009 0.013" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <radialGradient id="cheese" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#f6d985" />
+      <stop offset="55%" stop-color="#eebf57" />
+      <stop offset="100%" stop-color="#d99a36" />
+    </radialGradient>
+    <linearGradient id="crust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7a958" />
+      <stop offset="100%" stop-color="#b06f30" />
+    </linearGradient>
+    <radialGradient id="pep" cx="38%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#e0512c" />
+      <stop offset="100%" stop-color="#a52a16" />
+    </radialGradient>
+
+    <!-- The reusable 3D-ish pizza slice -->
+    <symbol id="slice" viewBox="0 0 200 210">
+      <g class="slice-shadow">
+        <path d="M100 196 L20 44 a90 26 0 0 1 160 0 Z" fill="#000" opacity="0.28" />
+      </g>
+      <!-- crust band -->
+      <path d="M20 44 a90 26 0 0 1 160 0 l-9 15 a78 22 0 0 0-142 0 Z" fill="url(#crust)" />
+      <!-- cheese body -->
+      <path d="M100 190 L29 59 a78 22 0 0 1 142 0 Z" fill="url(#cheese)" />
+      <!-- cheese sheen -->
+      <path d="M100 190 L29 59 a78 22 0 0 1 142 0 Z" fill="#fff" opacity="0.06" />
+      <!-- toppings -->
+      <circle cx="74" cy="86" r="10" fill="url(#pep)" />
+      <circle cx="120" cy="80" r="9" fill="url(#pep)" />
+      <circle cx="100" cy="120" r="9.5" fill="url(#pep)" />
+      <circle cx="86" cy="150" r="7" fill="url(#pep)" />
+      <circle cx="62" cy="70" r="4.6" fill="#3f4a26" />
+      <circle cx="132" cy="104" r="4.6" fill="#3f4a26" />
+      <circle cx="112" cy="150" r="4" fill="#3f4a26" />
+      <!-- basil -->
+      <path d="M92 104 q10-12 22-6 q-6 13-22 6Z" fill="#5b6a3a" />
+      <path d="M70 118 q-9-10-19-5 q5 11 19 5Z" fill="#6b7a44" />
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ TOP MICRO BAR ============ -->
+<div class="topbar">
+  <div class="wrap topbar__row">
+    <span class="status" id="statusPill" aria-live="polite">
+      <span class="status__dot"></span><span id="statusText">Checking hours…</span>
+    </span>
+    <span class="topbar__sep" aria-hidden="true">·</span>
+    <span class="topbar__loc">34646 LA-16, Denham Springs</span>
+    <a class="topbar__tel" href="tel:+12256648254">Call to order <span>(225) 664-8254</span></a>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__row">
+    <a class="brand" href="#top" aria-label="Pizza Place home">
+      <svg class="brand__mark" viewBox="0 0 200 210" aria-hidden="true"><use href="#slice"/></svg>
+      <span class="brand__name">Pizza&nbsp;Place</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#story">The Place</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn--call" href="tel:+12256648254">
+      <span class="btn__k">Order</span> (225) 664-8254
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <!-- Hero video slot: drop <video class="hero__video" autoplay muted loop playsinline poster="..."><source src="assets/img/hero.mp4"></video> here to enable the brick-oven hero video. The oven glow + embers remain as a graceful fallback. -->
+    <canvas class="hero__embers" id="embers" aria-hidden="true"></canvas>
+    <div class="hero__oven" aria-hidden="true"></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Denham Springs, Louisiana · Est. on the corner of LA-16</p>
+        <h1 class="hero__title">
+          “I've never had a<br><span class="ink-ember">bad pizza</span> from here.”
+        </h1>
+        <p class="hero__lede">
+          Hand-built pizzas, overstuffed po-boys and Gulf seafood plates — the kind of
+          neighborhood spot folks around here call <em>family</em>. Pull up a chair.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--ember" href="#menu">See the menu</a>
+          <a class="hero__tel" href="tel:+12256648254">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1Z"/></svg>
+            or call to order
+          </a>
+        </div>
+        <div class="rating" aria-label="Rated 4.5 out of 5 from 412 reviews">
+          <span class="rating__stars" aria-hidden="true">
+            <i class="s"></i><i class="s"></i><i class="s"></i><i class="s"></i><i class="s s--half"></i>
+          </span>
+          <strong>4.5</strong>
+          <span class="rating__count">412 Google reviews</span>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="logo-stage">
+          <div class="logo-stage__halo" aria-hidden="true"></div>
+          <svg class="logo-stage__slice rippled" viewBox="0 0 200 210" role="img" aria-label="Pizza Place pizza slice emblem">
+            <use href="#slice"/>
+          </svg>
+          <!-- concentric ripple rings -->
+          <span class="ring r1" aria-hidden="true"></span>
+          <span class="ring r2" aria-hidden="true"></span>
+          <span class="ring r3" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+    <p class="hero__foot">
+      <span>Open 7 days · 10:30am–8pm</span>
+      <span class="dotdiv" aria-hidden="true"></span>
+      <span>Dine in · Take-out · Delivery</span>
+      <span class="dotdiv" aria-hidden="true"></span>
+      <span>Kids' menu · No reservations needed</span>
+    </p>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Watson Supreme</span><span class="m-dot"></span>
+      <span>Meat Lovers</span><span class="m-dot"></span>
+      <span>Roast Beef Po-Boy</span><span class="m-dot"></span>
+      <span>Muffaletta</span><span class="m-dot"></span>
+      <span>Shrimp Pizza</span><span class="m-dot"></span>
+      <span>Bacon Cheeseburger Pizza</span><span class="m-dot"></span>
+      <span>Fried Pickles</span><span class="m-dot"></span>
+      <span>Seafood Platter</span><span class="m-dot"></span>
+      <span>La Mex</span><span class="m-dot"></span>
+      <span>Hot Boudin Bites</span><span class="m-dot"></span>
+      <!-- duplicate for seamless loop -->
+      <span>Watson Supreme</span><span class="m-dot"></span>
+      <span>Meat Lovers</span><span class="m-dot"></span>
+      <span>Roast Beef Po-Boy</span><span class="m-dot"></span>
+      <span>Muffaletta</span><span class="m-dot"></span>
+      <span>Shrimp Pizza</span><span class="m-dot"></span>
+      <span>Bacon Cheeseburger Pizza</span><span class="m-dot"></span>
+      <span>Fried Pickles</span><span class="m-dot"></span>
+      <span>Seafood Platter</span><span class="m-dot"></span>
+      <span>La Mex</span><span class="m-dot"></span>
+      <span>Hot Boudin Bites</span><span class="m-dot"></span>
+    </div>
+  </div>
+
+  <!-- ============ STORY ============ -->
+  <section class="story" id="story">
+    <div class="wrap story__grid">
+      <div class="story__media reveal">
+        <figure class="shot shot--counter" data-shot="interior">
+          <div class="shot__art shot__art--oven" aria-hidden="true">
+            <svg class="food food--pie" viewBox="0 0 240 240" aria-hidden="true"><use href="#slice"/></svg>
+          </div>
+          <figcaption>The oven's been warm a long time.</figcaption>
+        </figure>
+      </div>
+      <div class="story__copy reveal">
+        <p class="eyebrow">The Place</p>
+        <h2 class="h2">Not fancy. <span class="ink-ember">Just good</span>, every single time.</h2>
+        <p>
+          We're a family kitchen on LA-16 — pizzas pulled hot, po-boys dressed the way
+          your aunt would dress them, and a fryer that never quits. No reservations, no
+          fuss. You order, we cook, you leave full.
+        </p>
+        <p class="story__quote">
+          “We love the food and staff. The food is delicious and the staff is so friendly.
+          They have become family to us!”
+        </p>
+        <p class="story__by">— Verified Google review</p>
+        <div class="badges">
+          <span class="badge">4.5★ · 412 reviews</span>
+          <span class="badge">$10–20</span>
+          <span class="badge">Kids' menu</span>
+          <span class="badge">Take-out &amp; delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="menu__head reveal">
+        <p class="eyebrow">The Menu</p>
+        <h2 class="h2">Pizzas, po-boys &amp; plates</h2>
+        <p class="menu__note">Prices shown where posted. Toppings &amp; specials change — call <a href="tel:+12256648254">(225)&nbsp;664-8254</a> for today's.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Menu categories">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="pizzas">Specialty Pizzas</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="poboys">Po-Boys &amp; Sandwiches</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="plates">Plates &amp; Sides</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="sweets">Sweets</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="kids">Kids</button>
+      </div>
+
+      <!-- PIZZAS -->
+      <div class="panel is-active" data-panel="pizzas">
+        <div class="menu__list">
+          <article class="item"><h3>Watson Supreme</h3><p>The works — pepperoni, sausage, beef, mushroom, peppers, onion &amp; olives.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Meat Lovers</h3><p>Pepperoni, Italian sausage, hamburger &amp; bacon over real mozzarella.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Bacon Cheeseburger</h3><p>Seasoned beef, bacon, cheddar &amp; mozz — a burger you fold.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Shrimp</h3><p>Gulf shrimp, garlic butter base, mozzarella. A Louisiana thing.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>La Mex</h3><p>Taco beef, jalapeños, peppers &amp; cheese with a kick.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Chicken — Fajita · B-B-Q · Bacon Ranch</h3><p>Pick your style. Grilled chicken three good ways.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Hawaiian</h3><p>Ham &amp; pineapple. Yes, we're on that side.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>BLT</h3><p>Bacon baked in, lettuce &amp; tomato fresh on top after.</p><span class="price">Sm · Md · Lg</span></article>
+          <article class="item"><h3>Vegetarian</h3><p>Mushroom, onion, peppers, olives &amp; tomato. No meat, no problem.</p><span class="price">Sm · Md · Lg</span></article>
+        </div>
+        <div class="toppings reveal">
+          <p class="eyebrow">Build your own — toppings</p>
+          <ul class="chips">
+            <li>Pepperoni</li><li>Canadian Bacon</li><li>Sausage</li><li>Italian Sausage</li><li>Hamburger</li><li>Bacon</li><li>Mushrooms</li><li>Green Olives</li><li>Black Olives</li><li>Bell Peppers</li><li>Sweet Peppers</li><li>Pineapple</li><li>Tomatoes</li><li>Jalapeños</li><li>Shrimp</li><li>Anchovies</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PO-BOYS -->
+      <div class="panel" data-panel="poboys">
+        <div class="menu__list">
+          <article class="item"><h3>Roast Beef Po-Boy</h3><p>Slow beef &amp; gravy, dressed, on French bread.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Ham Po-Boy</h3><p>Stacked ham, dressed your way.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>B-B-Q Po-Boy</h3><p>Pulled &amp; sauced, piled high.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Turkey Po-Boy</h3><p>Roast turkey, crisp &amp; cool.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Shrimp Po-Boy</h3><p>Fried Gulf shrimp, lettuce, tomato, mayo.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Fish Po-Boy</h3><p>Golden fried fillet, dressed.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Muffaletta</h3><p>Round sesame loaf, ham, salami, provolone &amp; olive salad. The real deal.</p><span class="price">$12.99</span></article>
+          <article class="item"><h3>Philly</h3><p>Shaved steak, peppers, onions &amp; melted cheese.</p><span class="price">Market</span></article>
+          <article class="item"><h3>Burgers</h3><p>Hamburger or cheeseburger, cooked to order.</p><span class="price">$4.49</span></article>
+          <article class="item"><h3>Chicken — Grilled or Fried</h3><p>On a bun, dressed &amp; ready.</p><span class="price">Market</span></article>
+          <article class="item"><h3>BLT Sandwich</h3><p>Bacon, lettuce, tomato. Simple, done right.</p><span class="price">Market</span></article>
+        </div>
+      </div>
+
+      <!-- PLATES -->
+      <div class="panel" data-panel="plates">
+        <div class="menu__list">
+          <article class="item"><h3>Seafood Platter</h3><p>Fish, shrimp &amp; the fixin's, fried golden.</p><span class="price">$13.99</span></article>
+          <article class="item"><h3>Wings — Plain or B-B-Q</h3><p>Tossed hot, the way wings should be.</p><span class="price">$7.49</span></article>
+          <article class="item"><h3>Chicken Tenders &amp; Fries</h3><p>Hand-breaded, crispy, with fries.</p><span class="price">Market</span></article>
+          <article class="item"><h3>Hot Boudin Bites</h3><p>Louisiana boudin, fried into bites.</p><span class="price">Market</span></article>
+          <article class="item"><h3>Fried Pickles</h3><p>Tangy, crunchy, gone in a minute.</p><span class="price">$4.49</span></article>
+          <article class="item"><h3>Onion Rings</h3><p>Thick-cut, golden, stacked high.</p><span class="price">$4.49</span></article>
+          <article class="item"><h3>Baked Cheese Bread Sticks</h3><p>Pizza dough, garlic butter, mozzarella.</p><span class="price">$4.49</span></article>
+          <article class="item"><h3>Fried Ravioli</h3><p>Crispy outside, cheesy in, marinara to dip.</p><span class="price">$4.49</span></article>
+          <article class="item"><h3>Chicken Sticks</h3><p>Breaded strips with dipping sauce.</p><span class="price">$5.99</span></article>
+          <article class="item"><h3>Chef Salad</h3><p>Greens, meats, cheese &amp; the works.</p><span class="price">Market</span></article>
+          <article class="item"><h3>Spaghetti &amp; Garlic Bread</h3><p>Red sauce, parmesan, warm bread.</p><span class="price">Market</span></article>
+        </div>
+      </div>
+
+      <!-- SWEETS -->
+      <div class="panel" data-panel="sweets">
+        <div class="menu__list">
+          <article class="item"><h3>Dessert Pizza</h3><p>Sweet crust, cinnamon &amp; icing. Share it (or don't).</p><span class="price">Market</span></article>
+          <article class="item"><h3>Fudge Brownie</h3><p>Warm, dense, chocolate all the way through.</p><span class="price">Market</span></article>
+          <article class="item"><h3>Lava Cake</h3><p>Molten center, served warm.</p><span class="price">Market</span></article>
+        </div>
+      </div>
+
+      <!-- KIDS -->
+      <div class="panel" data-panel="kids">
+        <div class="menu__list">
+          <article class="item"><h3>Kids' Meals</h3><p>Personal pizza, tenders, or mac — pick one, keep it easy.</p><span class="price">$3.99</span></article>
+          <article class="item"><h3>Personal Pizza</h3><p>Their own little pie, their own toppings.</p><span class="price">$3.99</span></article>
+        </div>
+        <p class="menu__note">Every kid eats. That's the rule.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY / SIGNATURE STILLS ============ -->
+  <section class="gallery" aria-label="From the kitchen">
+    <div class="wrap">
+      <div class="menu__head reveal">
+        <p class="eyebrow">From the kitchen</p>
+        <h2 class="h2">What people drive out for</h2>
+      </div>
+      <div class="gallery__grid">
+        <figure class="shot shot--tall reveal" data-shot="supreme">
+          <div class="shot__art shot__art--pie" aria-hidden="true"><svg class="food food--pie" viewBox="0 0 240 240"><use href="#slice"/></svg></div>
+          <figcaption><strong>Watson Supreme</strong><span>the whole garden + the whole smokehouse</span></figcaption>
+        </figure>
+        <figure class="shot reveal" data-shot="muffaletta">
+          <div class="shot__art shot__art--sandwich" aria-hidden="true">
+            <svg viewBox="0 0 200 160" class="food"><ellipse cx="100" cy="120" rx="78" ry="20" fill="#cf9b54"/><path d="M22 110 q78-58 156 0 q-10 22-78 22 q-68 0-78-22Z" fill="#e7b86a"/><path d="M30 104 q70-30 140 0" fill="none" stroke="#b5783a" stroke-width="3"/><circle cx="70" cy="78" r="3" fill="#f3e3b0"/><circle cx="100" cy="70" r="3" fill="#f3e3b0"/><circle cx="130" cy="78" r="3" fill="#f3e3b0"/><path d="M28 112 q72 26 144 0" fill="none" stroke="#7d8a48" stroke-width="6" opacity=".7"/></svg>
+          </div>
+          <figcaption><strong>Muffaletta</strong><span>olive salad on a sesame round</span></figcaption>
+        </figure>
+        <figure class="shot reveal" data-shot="rings">
+          <div class="shot__art shot__art--rings" aria-hidden="true">
+            <svg viewBox="0 0 200 160" class="food"><g fill="none" stroke-width="14"><circle cx="70" cy="90" r="40" stroke="#e3a44e"/><circle cx="120" cy="70" r="34" stroke="#d99a3f"/><circle cx="130" cy="110" r="28" stroke="#eab863"/></g></svg>
+          </div>
+          <figcaption><strong>Onion Rings</strong><span>thick-cut, golden, stacked</span></figcaption>
+        </figure>
+        <figure class="shot reveal" data-shot="poboy">
+          <div class="shot__art shot__art--poboy" aria-hidden="true">
+            <svg viewBox="0 0 220 150" class="food"><path d="M14 86 q96-44 192 0 q-12 20-96 20 q-84 0-96-20Z" fill="#e7b86a"/><path d="M20 90 q90-26 180 0" fill="none" stroke="#7d8a48" stroke-width="7" opacity=".75"/><path d="M24 96 q86 20 172 0" fill="none" stroke="#b3402a" stroke-width="6"/><ellipse cx="110" cy="112" rx="96" ry="14" fill="#cf9b54"/></svg>
+          </div>
+          <figcaption><strong>Roast Beef Po-Boy</strong><span>dressed, with gravy</span></figcaption>
+        </figure>
+      </div>
+      <p class="gallery__note">Photography in progress — fresh shots from the LA-16 kitchen are on the way.</p>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="menu__head reveal">
+        <p class="eyebrow">Word of mouth</p>
+        <h2 class="h2">4.5 stars. 412 reviews. <span class="ink-ember">Zero bad pizzas.</span></h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="quote reveal">
+          <span class="quote__stars" aria-label="5 stars">★★★★★</span>
+          <p>“Great food and great employees.”</p>
+          <cite>Verified Google review</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="quote__stars" aria-label="5 stars">★★★★★</span>
+          <p>“I've never had a bad pizza from here.”</p>
+          <cite>Verified Google review</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="quote__stars" aria-label="5 stars">★★★★★</span>
+          <p>“Great pizza, po-boys, and friendly service.”</p>
+          <cite>Verified Google review</cite>
+        </blockquote>
+        <blockquote class="quote quote--wide reveal">
+          <span class="quote__stars" aria-label="5 stars">★★★★★</span>
+          <p>“We love the food and staff. The food is delicious and the staff is so friendly. They have become family to us!”</p>
+          <cite>Verified Google review</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit" id="visit">
+    <div class="wrap visit__grid">
+      <div class="visit__info reveal">
+        <p class="eyebrow">Come see us</p>
+        <h2 class="h2">34646 LA-16,<br>Denham Springs, LA</h2>
+        <p class="visit__sub">In Watson, right on Highway 16. Easy in, easy out.</p>
+
+        <div class="visit__rows">
+          <a class="visit__row" href="tel:+12256648254">
+            <span class="visit__label">Call to order</span>
+            <span class="visit__val">(225) 664-8254</span>
+          </a>
+          <a class="visit__row" href="https://www.google.com/maps/dir/?api=1&destination=34646+LA-16+Denham+Springs+LA+70706" target="_blank" rel="noopener">
+            <span class="visit__label">Directions</span>
+            <span class="visit__val">34646 LA-16 · 70706 ↗</span>
+          </a>
+        </div>
+
+        <table class="hours" id="hoursTable" aria-label="Hours of operation">
+          <tbody>
+            <tr data-day="1"><th>Monday</th><td>10:30am – 8:00pm</td></tr>
+            <tr data-day="2"><th>Tuesday</th><td>10:30am – 8:00pm</td></tr>
+            <tr data-day="3"><th>Wednesday</th><td>10:30am – 8:00pm</td></tr>
+            <tr data-day="4"><th>Thursday</th><td>10:30am – 8:00pm</td></tr>
+            <tr data-day="5"><th>Friday</th><td>10:30am – 8:30pm</td></tr>
+            <tr data-day="6"><th>Saturday</th><td>10:30am – 8:30pm</td></tr>
+            <tr data-day="0"><th>Sunday</th><td>10:30am – 8:00pm</td></tr>
+          </tbody>
+        </table>
+        <p class="visit__fine">Doesn't accept reservations · Kids' menu · Dine in, take-out &amp; delivery</p>
+      </div>
+
+      <div class="visit__map reveal">
+        <iframe
+          title="Map to Pizza Place, 34646 LA-16, Denham Springs"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-90.94%2C30.55%2C-90.88%2C30.61&layer=mapnik&marker=30.5808%2C-90.9088"></iframe>
+        <a class="visit__maplink" href="https://www.google.com/maps/search/?api=1&query=Pizza+Place+34646+LA-16+Denham+Springs+LA+70706" target="_blank" rel="noopener">Open in Maps ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <svg class="brand__mark" viewBox="0 0 200 210" aria-hidden="true"><use href="#slice"/></svg>
+      <span class="brand__name">Pizza&nbsp;Place</span>
+    </div>
+    <div class="foot__col">
+      <p class="foot__k">Find us</p>
+      <p>34646 LA-16<br>Denham Springs, LA 70706</p>
+    </div>
+    <div class="foot__col">
+      <p class="foot__k">Order</p>
+      <p><a href="tel:+12256648254">(225) 664-8254</a></p>
+    </div>
+    <div class="foot__col">
+      <p class="foot__k">Hours</p>
+      <p>Mon–Thu 10:30a–8p<br>Fri–Sat 10:30a–8:30p<br>Sun 10:30a–8p</p>
+    </div>
+  </div>
+  <div class="wrap foot__base">
+    <span>© <span id="yr"></span> Pizza Place · Denham Springs, Louisiana</span>
+    <span class="foot__rate">4.5★ · 412 reviews</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
