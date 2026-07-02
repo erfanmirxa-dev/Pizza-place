@@ -27,8 +27,9 @@
       var max = (doc.scrollHeight - doc.clientHeight) || 1;
       if (progress) progress.style.width = Math.min(100, (scrolled / max) * 100) + "%";
 
-      var threshold = hero ? hero.offsetHeight - 90 : 400;
-      if (nav) nav.classList.toggle("nav--solid", scrolled > threshold);
+      // pages without a hero (shop pages) keep whatever nav--solid state
+      // the markup already set — there's no transparent moment to toggle
+      if (nav && hero) nav.classList.toggle("nav--solid", scrolled > hero.offsetHeight - 90);
     }
     document.addEventListener("scroll", onScroll, { passive: true });
     onScroll();

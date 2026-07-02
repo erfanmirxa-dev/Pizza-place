@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CLAIRA — What You Carry Into the Light</title>
 <meta name="description" content="CLAIRA is a quiet-luxury maison for bags, jewellery and women's clothing. Full-grain leather, solid hardware, made to carry into the light." />
-<meta name="theme-color" content="#2A1F17" />
+<meta name="theme-color" content="#0A0908" />
 
 <meta property="og:title" content="CLAIRA — What You Carry Into the Light" />
 <meta property="og:description" content="A quiet-luxury maison for bags, jewellery and women's clothing, made slowly." />
 <meta property="og:type" content="website" />
 
 <link rel="stylesheet" href="assets/css/styles.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232A1F17'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='46' fill='%23ED1E84' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A0908'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='46' fill='%23ED1E84' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
 
@@ -33,10 +33,10 @@
       </button>
     </div>
 
-    <a class="brand" href="#top" aria-label="CLAIRA home">CLAIRA</a>
+    <a class="brand" href="index.html" aria-label="CLAIRA home">CLAIRA</a>
 
     <div class="nav__right">
-      <a class="nav__link nav__contact" href="#footer">Contact&nbsp;Us</a>
+      <a class="nav__link nav__contact" href="index.html#footer">Contact&nbsp;Us</a>
       <button class="nav__icon" aria-label="Wishlist">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.6-4.6-10-9.1C0.4 8 1.9 4.6 5.2 3.8 7.6 3.2 10 4.3 12 7c2-2.7 4.4-3.8 6.8-3.2 3.3.8 4.8 4.2 3.2 7.6-2.4 4.5-10 9.1-10 9.1Z"/></svg>
       </button>
@@ -51,15 +51,13 @@
   </div>
 </header>
 
-<!-- ============ MOBILE DRAWER ============ -->
+<!-- ============ MOBILE DRAWER — this is the real site menu, it goes to real pages ============ -->
 <div class="drawer" id="drawer" aria-hidden="true">
   <nav class="drawer__nav" aria-label="Mobile">
-    <a href="#bags">Bags</a>
-    <a href="#jewellery">Jewellery</a>
-    <a href="#clothing">Clothing</a>
-    <a href="#signature">The Signature</a>
-    <a href="#craft">Craftsmanship</a>
-    <a href="#footer">Contact</a>
+    <a href="bags.html"><span>01</span> Bags</a>
+    <a href="jewellery.html"><span>02</span> Jewellery</a>
+    <a href="clothing.html"><span>03</span> Clothing</a>
+    <a href="index.html#footer"><span>04</span> Contact Us</a>
   </nav>
 </div>
 
@@ -70,33 +68,33 @@
     <div class="hero__bg" style="background-image:url('assets/img/hero.jpg')" role="img" aria-label="A woman on a California coastline carrying the CLAIRA signature tote in campaign pink"></div>
     <div class="hero__scrim" aria-hidden="true"></div>
     <div class="wrap hero__content">
-      <p class="eyebrow eyebrow--on-dark">Women</p>
+      <p class="eyebrow">Women</p>
       <h1 class="hero__title">New Handbags<br>for Her</h1>
-      <a class="link-cta link-cta--on-dark" href="#bags">Shop Now</a>
+      <a class="link-cta" href="bags.html">Shop Now</a>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 01 — MANIFESTO (shadow) ============ -->
-  <section class="chapter chapter--espresso" id="manifesto">
+  <!-- ============ CHAPTER 01 — MANIFESTO ============ -->
+  <section class="chapter" id="manifesto">
     <div class="wrap chapter__inner chapter__inner--center">
       <span class="chapter-num">01</span>
       <p class="statement">
         What you carry <em>into the light.</em>
       </p>
-      <p class="eyebrow eyebrow--on-dark chapter__sub">A quiet luxury maison, for a woman who has nothing to prove</p>
+      <p class="eyebrow chapter__sub">A quiet luxury maison, for a woman who has nothing to prove</p>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 02 — SHOP BY CATEGORY (shadow) ============ -->
-  <section class="chapter chapter--espresso chapter--tight" id="shop">
+  <!-- ============ CHAPTER 02 — SHOP BY CATEGORY ============ -->
+  <section class="chapter chapter--surface chapter--tight" id="shop">
     <div class="wrap">
       <div class="chapter__head chapter__head--center reveal">
         <span class="chapter-num">02</span>
-        <p class="eyebrow eyebrow--on-dark">The Full Maison</p>
-        <h2 class="h2 h2--on-dark">Bags. Jewellery. Clothing.</h2>
+        <p class="eyebrow">The Full Maison</p>
+        <h2 class="h2">Bags. Jewellery. Clothing.</h2>
       </div>
       <div class="categories">
-        <a class="category-tile reveal" href="#bags">
+        <a class="category-tile reveal" href="bags.html">
           <img src="assets/img/bag-detail.jpg" alt="CLAIRA handbags" loading="lazy" />
           <span class="category-tile__label">
             <span class="category-tile__num">02.1</span>
@@ -104,7 +102,7 @@
             <span class="category-tile__link">Shop Bags</span>
           </span>
         </a>
-        <a class="category-tile reveal" href="#jewellery">
+        <a class="category-tile reveal" href="jewellery.html">
           <img src="assets/img/jewellery-neck.jpg" alt="CLAIRA jewellery" loading="lazy" />
           <span class="category-tile__label">
             <span class="category-tile__num">02.2</span>
@@ -112,7 +110,7 @@
             <span class="category-tile__link">Shop Jewellery</span>
           </span>
         </a>
-        <a class="category-tile reveal" href="#clothing">
+        <a class="category-tile reveal" href="clothing.html">
           <img src="assets/img/clothing-street.jpg" alt="CLAIRA women's clothing" loading="lazy" />
           <span class="category-tile__label">
             <span class="category-tile__num">02.3</span>
@@ -124,8 +122,8 @@
     </div>
   </section>
 
-  <!-- ============ CHAPTER 03 — SIGNATURE SPOTLIGHT (shadow → bone) ============ -->
-  <section class="chapter chapter--fade" id="signature">
+  <!-- ============ CHAPTER 03 — SIGNATURE SPOTLIGHT ============ -->
+  <section class="chapter" id="signature">
     <div class="wrap signature__grid">
       <figure class="signature__media reveal">
         <img src="assets/img/bag-detail.jpg" alt="Close detail of the CLAIRA signature tote in campaign pink leather" loading="lazy" />
@@ -140,199 +138,26 @@
           carried for decades — not seasons.
         </p>
         <p class="price">$ 890</p>
-        <a class="link-cta" href="#bags">Shop the Icon</a>
+        <a class="link-cta" href="bags.html">Shop the Icon</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 04 — BAGS ============ -->
-  <section class="chapter chapter--bone" id="bags">
-    <div class="wrap">
-      <div class="chapter__head reveal">
-        <span class="chapter-num">04</span>
-        <p class="eyebrow">Shop</p>
-        <h2 class="h2">Bags</h2>
-      </div>
+  <!-- ============ WIDE EDITORIAL BANNER — "Shop the Collection" ============ -->
+  <a class="banner reveal" href="clothing.html" aria-label="Shop the Collection">
+    <img src="assets/img/banner-collection.jpg" alt="Campaign editorial for the CLAIRA collection" loading="lazy" />
+    <span class="banner__inner wrap">
+      <span class="eyebrow banner__eyebrow">New Season</span>
+      <span class="banner__title">Shop the Collection</span>
+      <span class="link-cta">Discover More</span>
+    </span>
+  </a>
 
-      <div class="products">
-        <article class="product reveal">
-          <div class="product__media">
-            <img src="assets/img/bag-detail.jpg" alt="The Meridian Tote in campaign pink leather" loading="lazy" />
-          </div>
-          <div class="product__body">
-            <p class="product__num">04.1</p>
-            <h3 class="product__name">The Meridian Tote</h3>
-            <p class="product__price">$ 890</p>
-            <a class="link-cta link-cta--sm" href="#signature">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--espresso" data-mono="D" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">04.2</p>
-            <h3 class="product__name">The Dune Shoulder Bag</h3>
-            <p class="product__price">$ 650</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--near-black" data-mono="A" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">04.3</p>
-            <h3 class="product__name">The Ansel Clutch</h3>
-            <p class="product__price">$ 420</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--bone" data-mono="P" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">04.4</p>
-            <h3 class="product__name">The Petit Bijou</h3>
-            <p class="product__price">$ 540</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CHAPTER 05 — JEWELLERY ============ -->
-  <section class="chapter chapter--bone-deep" id="jewellery">
-    <div class="wrap">
-      <div class="chapter__head reveal">
-        <span class="chapter-num">05</span>
-        <p class="eyebrow">Shop</p>
-        <h2 class="h2">Jewellery</h2>
-      </div>
-
-      <div class="products">
-        <article class="product reveal">
-          <div class="product__media">
-            <img src="assets/img/jewellery-neck.jpg" alt="The Collarbone Chain styling detail" loading="lazy" />
-          </div>
-          <div class="product__body">
-            <p class="product__num">05.1</p>
-            <h3 class="product__name">The Collarbone Chain</h3>
-            <p class="product__price">$ 320</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <img src="assets/img/jewellery-hand.jpg" alt="The Signet Ring styling detail" loading="lazy" />
-          </div>
-          <div class="product__body">
-            <p class="product__num">05.2</p>
-            <h3 class="product__name">The Signet Ring</h3>
-            <p class="product__price">$ 180</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--gold" data-mono="H" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">05.3</p>
-            <h3 class="product__name">The Hoop, 14k Gold</h3>
-            <p class="product__price">$ 240</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--rose" data-mono="B" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">05.4</p>
-            <h3 class="product__name">The Cuff Bracelet</h3>
-            <p class="product__price">$ 290</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CHAPTER 06 — CLOTHING ============ -->
-  <section class="chapter chapter--bone" id="clothing">
-    <div class="wrap">
-      <div class="chapter__head reveal">
-        <span class="chapter-num">06</span>
-        <p class="eyebrow">Shop</p>
-        <h2 class="h2">Women's Clothing</h2>
-      </div>
-
-      <div class="products">
-        <article class="product reveal">
-          <div class="product__media">
-            <img src="assets/img/clothing-active.jpg" alt="The Track Bra in campaign orange" loading="lazy" />
-          </div>
-          <div class="product__body">
-            <p class="product__num">06.1</p>
-            <h3 class="product__name">The Track Bra</h3>
-            <p class="product__price">$ 95</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <img src="assets/img/clothing-street.jpg" alt="The Graphic Crop Tee, styled with denim" loading="lazy" />
-          </div>
-          <div class="product__body">
-            <p class="product__num">06.2</p>
-            <h3 class="product__name">The Graphic Crop Tee</h3>
-            <p class="product__price">$ 110</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--espresso" data-mono="T" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">06.3</p>
-            <h3 class="product__name">The Tailored Trouser</h3>
-            <p class="product__price">$ 240</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__media">
-            <div class="swatch swatch--bone" data-mono="S" aria-hidden="true"></div>
-          </div>
-          <div class="product__body">
-            <p class="product__num">06.4</p>
-            <h3 class="product__name">The Slip Dress</h3>
-            <p class="product__price">$ 320</p>
-            <a class="link-cta link-cta--sm" href="#">View</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CHAPTER 07 — CRAFTSMANSHIP ============ -->
-  <section class="chapter chapter--bone-deep" id="craft">
+  <!-- ============ CHAPTER 04 — CRAFTSMANSHIP ============ -->
+  <section class="chapter chapter--surface" id="craft">
     <div class="wrap craft__grid">
       <div class="craft__copy reveal">
-        <span class="chapter-num">07</span>
+        <span class="chapter-num">04</span>
         <p class="eyebrow">Craftsmanship</p>
         <h2 class="h2">Made slowly,<br>on purpose.</h2>
         <p class="lede">
@@ -354,24 +179,23 @@
     </div>
   </section>
 
-  <!-- ============ CHAPTER 08 — CAMPAIGN QUOTE ============ -->
-  <section class="chapter chapter--near-black" id="journal">
-    <div class="chapter__bgtexture" style="background-image:url('assets/img/coast.jpg')" aria-hidden="true"></div>
+  <!-- ============ CHAPTER 05 — CAMPAIGN QUOTE ============ -->
+  <section class="chapter" id="journal">
     <div class="wrap chapter__inner chapter__inner--center reveal">
-      <span class="chapter-num">08</span>
+      <span class="chapter-num">05</span>
       <p class="statement statement--sm">
         “We don't design for the room you walk into.<br>
         We design for the light you walk out into.”
       </p>
-      <p class="eyebrow eyebrow--on-dark chapter__sub">— The Founder, on the house philosophy</p>
+      <p class="eyebrow chapter__sub">— The Founder, on the house philosophy</p>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 09 — WORD OF MOUTH ============ -->
-  <section class="chapter chapter--bone" id="reviews">
+  <!-- ============ CHAPTER 06 — WORD OF MOUTH ============ -->
+  <section class="chapter chapter--surface" id="reviews">
     <div class="wrap">
       <div class="chapter__head reveal">
-        <span class="chapter-num">09</span>
+        <span class="chapter-num">06</span>
         <p class="eyebrow">Word of Mouth</p>
         <h2 class="h2">Carried, not just bought</h2>
       </div>
@@ -393,14 +217,14 @@
   </section>
 
   <!-- ============ NEWSLETTER ============ -->
-  <section class="chapter chapter--espresso chapter--tight" id="join">
+  <section class="chapter chapter--tight" id="join">
     <div class="wrap chapter__inner chapter__inner--center">
-      <p class="eyebrow eyebrow--on-dark">Join the Maison</p>
-      <h2 class="h2 h2--on-dark">First to know, first to carry.</h2>
+      <p class="eyebrow">Join the Maison</p>
+      <h2 class="h2">First to know, first to carry.</h2>
       <form class="join__form" id="joinForm">
         <label class="sr-only" for="joinEmail">Email address</label>
         <input class="join__input" id="joinEmail" type="email" placeholder="Email address" required />
-        <button class="link-cta link-cta--on-dark" type="submit">Subscribe</button>
+        <button class="link-cta" type="submit">Subscribe</button>
       </form>
     </div>
   </section>
@@ -411,20 +235,20 @@
 <footer class="foot" id="footer">
   <div class="wrap foot__grid">
     <div class="foot__brand">
-      <a class="brand brand--foot" href="#top">CLAIRA</a>
+      <a class="brand brand--foot" href="index.html">CLAIRA</a>
       <p class="foot__tag">What you carry into the light.</p>
     </div>
     <div class="foot__col">
       <p class="foot__k">Shop</p>
-      <a href="#bags">Bags</a>
-      <a href="#jewellery">Jewellery</a>
-      <a href="#clothing">Clothing</a>
+      <a href="bags.html">Bags</a>
+      <a href="jewellery.html">Jewellery</a>
+      <a href="clothing.html">Clothing</a>
     </div>
     <div class="foot__col">
       <p class="foot__k">Maison</p>
-      <a href="#manifesto">Our Story</a>
-      <a href="#craft">Craftsmanship</a>
-      <a href="#journal">Journal</a>
+      <a href="index.html#manifesto">Our Story</a>
+      <a href="index.html#craft">Craftsmanship</a>
+      <a href="index.html#journal">Journal</a>
     </div>
     <div class="foot__col">
       <p class="foot__k">Client Care</p>
