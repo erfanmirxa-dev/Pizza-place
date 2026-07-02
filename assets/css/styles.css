@@ -590,13 +590,16 @@ input{ font:inherit; }
   color:var(--bone-soft);
 }
 
-/* ---------- reveal-on-scroll ---------- */
-.reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s cubic-bezier(.16,.84,.44,1), transform .8s cubic-bezier(.16,.84,.44,1); }
-.reveal.is-in{ opacity:1; transform:none; }
+/* ---------- reveal-on-scroll ----------
+   Visible by default — main.js opts elements into the hidden starting
+   state (.reveal-armed) only once it has successfully run, so a JS error
+   or an IntersectionObserver quirk can never leave content stuck hidden. */
+.reveal.reveal-armed{ opacity:0; transform:translateY(26px); transition:opacity .8s cubic-bezier(.16,.84,.44,1), transform .8s cubic-bezier(.16,.84,.44,1); }
+.reveal.reveal-armed.is-in{ opacity:1; transform:none; }
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
-  .reveal{ opacity:1; transform:none; transition:none; }
+  .reveal.reveal-armed{ opacity:1; transform:none; transition:none; }
 }
 
 /* ---------- responsive ---------- */
