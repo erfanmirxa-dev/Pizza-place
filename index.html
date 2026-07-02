@@ -4,16 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CLAIRA — What You Carry Into the Light</title>
-<meta name="description" content="CLAIRA is a quiet-luxury handbag maison. Full-grain leather, solid hardware, made to carry into the light. Shop the signature collection." />
+<meta name="description" content="CLAIRA is a quiet-luxury maison for bags, jewellery and women's clothing. Full-grain leather, solid hardware, made to carry into the light." />
 <meta name="theme-color" content="#2A1F17" />
 
 <meta property="og:title" content="CLAIRA — What You Carry Into the Light" />
-<meta property="og:description" content="A quiet-luxury handbag maison. Full-grain leather, solid hardware, made slowly." />
+<meta property="og:description" content="A quiet-luxury maison for bags, jewellery and women's clothing, made slowly." />
 <meta property="og:type" content="website" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232A1F17'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='46' fill='%23ED1E84' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
@@ -58,10 +54,11 @@
 <!-- ============ MOBILE DRAWER ============ -->
 <div class="drawer" id="drawer" aria-hidden="true">
   <nav class="drawer__nav" aria-label="Mobile">
-    <a href="#collection">Shop All</a>
+    <a href="#bags">Bags</a>
+    <a href="#jewellery">Jewellery</a>
+    <a href="#clothing">Clothing</a>
     <a href="#signature">The Signature</a>
     <a href="#craft">Craftsmanship</a>
-    <a href="#journal">Journal</a>
     <a href="#footer">Contact</a>
   </nav>
 </div>
@@ -75,7 +72,7 @@
     <div class="wrap hero__content">
       <p class="eyebrow eyebrow--on-dark">Women</p>
       <h1 class="hero__title">New Handbags<br>for Her</h1>
-      <a class="link-cta link-cta--on-dark" href="#collection">Shop Now</a>
+      <a class="link-cta link-cta--on-dark" href="#bags">Shop Now</a>
     </div>
   </section>
 
@@ -90,14 +87,51 @@
     </div>
   </section>
 
-  <!-- ============ CHAPTER 02 — SIGNATURE SPOTLIGHT (shadow → bone) ============ -->
+  <!-- ============ CHAPTER 02 — SHOP BY CATEGORY (shadow) ============ -->
+  <section class="chapter chapter--espresso chapter--tight" id="shop">
+    <div class="wrap">
+      <div class="chapter__head chapter__head--center reveal">
+        <span class="chapter-num">02</span>
+        <p class="eyebrow eyebrow--on-dark">The Full Maison</p>
+        <h2 class="h2 h2--on-dark">Bags. Jewellery. Clothing.</h2>
+      </div>
+      <div class="categories">
+        <a class="category-tile reveal" href="#bags">
+          <img src="assets/img/bag-detail.jpg" alt="CLAIRA handbags" loading="lazy" />
+          <span class="category-tile__label">
+            <span class="category-tile__num">02.1</span>
+            <span class="category-tile__name">Bags</span>
+            <span class="category-tile__link">Shop Bags</span>
+          </span>
+        </a>
+        <a class="category-tile reveal" href="#jewellery">
+          <img src="assets/img/jewellery-neck.jpg" alt="CLAIRA jewellery" loading="lazy" />
+          <span class="category-tile__label">
+            <span class="category-tile__num">02.2</span>
+            <span class="category-tile__name">Jewellery</span>
+            <span class="category-tile__link">Shop Jewellery</span>
+          </span>
+        </a>
+        <a class="category-tile reveal" href="#clothing">
+          <img src="assets/img/clothing-street.jpg" alt="CLAIRA women's clothing" loading="lazy" />
+          <span class="category-tile__label">
+            <span class="category-tile__num">02.3</span>
+            <span class="category-tile__name">Clothing</span>
+            <span class="category-tile__link">Shop Clothing</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAPTER 03 — SIGNATURE SPOTLIGHT (shadow → bone) ============ -->
   <section class="chapter chapter--fade" id="signature">
     <div class="wrap signature__grid">
       <figure class="signature__media reveal">
         <img src="assets/img/bag-detail.jpg" alt="Close detail of the CLAIRA signature tote in campaign pink leather" loading="lazy" />
       </figure>
       <div class="signature__copy reveal">
-        <span class="chapter-num">02</span>
+        <span class="chapter-num">03</span>
         <p class="eyebrow">The Icon</p>
         <h2 class="h2">The Signature Tote</h2>
         <p class="lede">
@@ -106,80 +140,210 @@
           carried for decades — not seasons.
         </p>
         <p class="price">$ 890</p>
-        <a class="link-cta" href="#collection">Shop the Icon</a>
+        <a class="link-cta" href="#bags">Shop the Icon</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 03 — COLLECTION ============ -->
-  <section class="chapter chapter--bone" id="collection">
+  <!-- ============ CHAPTER 04 — BAGS ============ -->
+  <section class="chapter chapter--bone" id="bags">
     <div class="wrap">
       <div class="chapter__head reveal">
-        <span class="chapter-num">03</span>
+        <span class="chapter-num">04</span>
         <p class="eyebrow">Shop</p>
-        <h2 class="h2">The Collection</h2>
+        <h2 class="h2">Bags</h2>
       </div>
 
       <div class="products">
         <article class="product reveal">
-          <div class="product__art" aria-hidden="true">
-            <svg viewBox="0 0 200 170"><use href="#bag-tote"/></svg>
+          <div class="product__media">
+            <img src="assets/img/bag-detail.jpg" alt="The Meridian Tote in campaign pink leather" loading="lazy" />
           </div>
-          <p class="product__num">03.1</p>
-          <h3 class="product__name">The Meridian Tote</h3>
-          <p class="product__price">$ 890</p>
-          <a class="link-cta link-cta--sm" href="#">View</a>
+          <div class="product__body">
+            <p class="product__num">04.1</p>
+            <h3 class="product__name">The Meridian Tote</h3>
+            <p class="product__price">$ 890</p>
+            <a class="link-cta link-cta--sm" href="#signature">View</a>
+          </div>
         </article>
 
         <article class="product reveal">
-          <div class="product__art" aria-hidden="true">
-            <svg viewBox="0 0 200 170"><use href="#bag-shoulder"/></svg>
+          <div class="product__media">
+            <div class="swatch swatch--espresso" data-mono="D" aria-hidden="true"></div>
           </div>
-          <p class="product__num">03.2</p>
-          <h3 class="product__name">The Dune Shoulder Bag</h3>
-          <p class="product__price">$ 650</p>
-          <a class="link-cta link-cta--sm" href="#">View</a>
+          <div class="product__body">
+            <p class="product__num">04.2</p>
+            <h3 class="product__name">The Dune Shoulder Bag</h3>
+            <p class="product__price">$ 650</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
         </article>
 
         <article class="product reveal">
-          <div class="product__art" aria-hidden="true">
-            <svg viewBox="0 0 200 170"><use href="#bag-clutch"/></svg>
+          <div class="product__media">
+            <div class="swatch swatch--near-black" data-mono="A" aria-hidden="true"></div>
           </div>
-          <p class="product__num">03.3</p>
-          <h3 class="product__name">The Ansel Clutch</h3>
-          <p class="product__price">$ 420</p>
-          <a class="link-cta link-cta--sm" href="#">View</a>
+          <div class="product__body">
+            <p class="product__num">04.3</p>
+            <h3 class="product__name">The Ansel Clutch</h3>
+            <p class="product__price">$ 420</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
         </article>
 
         <article class="product reveal">
-          <div class="product__art" aria-hidden="true">
-            <svg viewBox="0 0 200 170"><use href="#bag-mini"/></svg>
+          <div class="product__media">
+            <div class="swatch swatch--bone" data-mono="P" aria-hidden="true"></div>
           </div>
-          <p class="product__num">03.4</p>
-          <h3 class="product__name">The Petit Bijou</h3>
-          <p class="product__price">$ 540</p>
-          <a class="link-cta link-cta--sm" href="#">View</a>
+          <div class="product__body">
+            <p class="product__num">04.4</p>
+            <h3 class="product__name">The Petit Bijou</h3>
+            <p class="product__price">$ 540</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ CHAPTER 04 — CRAFTSMANSHIP ============ -->
+  <!-- ============ CHAPTER 05 — JEWELLERY ============ -->
+  <section class="chapter chapter--bone-deep" id="jewellery">
+    <div class="wrap">
+      <div class="chapter__head reveal">
+        <span class="chapter-num">05</span>
+        <p class="eyebrow">Shop</p>
+        <h2 class="h2">Jewellery</h2>
+      </div>
+
+      <div class="products">
+        <article class="product reveal">
+          <div class="product__media">
+            <img src="assets/img/jewellery-neck.jpg" alt="The Collarbone Chain styling detail" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <p class="product__num">05.1</p>
+            <h3 class="product__name">The Collarbone Chain</h3>
+            <p class="product__price">$ 320</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <img src="assets/img/jewellery-hand.jpg" alt="The Signet Ring styling detail" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <p class="product__num">05.2</p>
+            <h3 class="product__name">The Signet Ring</h3>
+            <p class="product__price">$ 180</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <div class="swatch swatch--gold" data-mono="H" aria-hidden="true"></div>
+          </div>
+          <div class="product__body">
+            <p class="product__num">05.3</p>
+            <h3 class="product__name">The Hoop, 14k Gold</h3>
+            <p class="product__price">$ 240</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <div class="swatch swatch--rose" data-mono="B" aria-hidden="true"></div>
+          </div>
+          <div class="product__body">
+            <p class="product__num">05.4</p>
+            <h3 class="product__name">The Cuff Bracelet</h3>
+            <p class="product__price">$ 290</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAPTER 06 — CLOTHING ============ -->
+  <section class="chapter chapter--bone" id="clothing">
+    <div class="wrap">
+      <div class="chapter__head reveal">
+        <span class="chapter-num">06</span>
+        <p class="eyebrow">Shop</p>
+        <h2 class="h2">Women's Clothing</h2>
+      </div>
+
+      <div class="products">
+        <article class="product reveal">
+          <div class="product__media">
+            <img src="assets/img/clothing-active.jpg" alt="The Track Bra in campaign orange" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <p class="product__num">06.1</p>
+            <h3 class="product__name">The Track Bra</h3>
+            <p class="product__price">$ 95</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <img src="assets/img/clothing-street.jpg" alt="The Graphic Crop Tee, styled with denim" loading="lazy" />
+          </div>
+          <div class="product__body">
+            <p class="product__num">06.2</p>
+            <h3 class="product__name">The Graphic Crop Tee</h3>
+            <p class="product__price">$ 110</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <div class="swatch swatch--espresso" data-mono="T" aria-hidden="true"></div>
+          </div>
+          <div class="product__body">
+            <p class="product__num">06.3</p>
+            <h3 class="product__name">The Tailored Trouser</h3>
+            <p class="product__price">$ 240</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__media">
+            <div class="swatch swatch--bone" data-mono="S" aria-hidden="true"></div>
+          </div>
+          <div class="product__body">
+            <p class="product__num">06.4</p>
+            <h3 class="product__name">The Slip Dress</h3>
+            <p class="product__price">$ 320</p>
+            <a class="link-cta link-cta--sm" href="#">View</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAPTER 07 — CRAFTSMANSHIP ============ -->
   <section class="chapter chapter--bone-deep" id="craft">
     <div class="wrap craft__grid">
       <div class="craft__copy reveal">
-        <span class="chapter-num">04</span>
+        <span class="chapter-num">07</span>
         <p class="eyebrow">Craftsmanship</p>
         <h2 class="h2">Made slowly,<br>on purpose.</h2>
         <p class="lede">
-          Every CLAIRA bag begins as a single hide of full-grain Italian
-          leather, cut by hand and stitched in small batches by artisans who've
-          done little else for twenty years. Solid brass hardware. No shortcuts,
-          no seasons rushed to shelf.
+          Every CLAIRA piece — bag, chain or garment — starts the same way: one
+          material, chosen well, worked by hand in small batches by artisans
+          who've done little else for twenty years. No shortcuts, no seasons
+          rushed to shelf.
         </p>
         <ul class="craft__list">
           <li>Full-grain leather, sourced in Tuscany</li>
-          <li>Solid, unplated brass hardware</li>
+          <li>Solid, unplated brass and 14k gold hardware</li>
           <li>Hand-stitched edges, saddle-sewn</li>
           <li>Numbered, made-to-order runs</li>
         </ul>
@@ -190,11 +354,11 @@
     </div>
   </section>
 
-  <!-- ============ CHAPTER 05 — CAMPAIGN QUOTE ============ -->
+  <!-- ============ CHAPTER 08 — CAMPAIGN QUOTE ============ -->
   <section class="chapter chapter--near-black" id="journal">
     <div class="chapter__bgtexture" style="background-image:url('assets/img/coast.jpg')" aria-hidden="true"></div>
     <div class="wrap chapter__inner chapter__inner--center reveal">
-      <span class="chapter-num">05</span>
+      <span class="chapter-num">08</span>
       <p class="statement statement--sm">
         “We don't design for the room you walk into.<br>
         We design for the light you walk out into.”
@@ -203,11 +367,11 @@
     </div>
   </section>
 
-  <!-- ============ CHAPTER 06 — WORD OF MOUTH ============ -->
+  <!-- ============ CHAPTER 09 — WORD OF MOUTH ============ -->
   <section class="chapter chapter--bone" id="reviews">
     <div class="wrap">
       <div class="chapter__head reveal">
-        <span class="chapter-num">06</span>
+        <span class="chapter-num">09</span>
         <p class="eyebrow">Word of Mouth</p>
         <h2 class="h2">Carried, not just bought</h2>
       </div>
@@ -252,9 +416,9 @@
     </div>
     <div class="foot__col">
       <p class="foot__k">Shop</p>
-      <a href="#collection">All Handbags</a>
-      <a href="#signature">The Signature Tote</a>
-      <a href="#collection">New Arrivals</a>
+      <a href="#bags">Bags</a>
+      <a href="#jewellery">Jewellery</a>
+      <a href="#clothing">Clothing</a>
     </div>
     <div class="foot__col">
       <p class="foot__k">Maison</p>
@@ -274,31 +438,6 @@
     <span class="foot__rate">Full-grain leather · Made to order</span>
   </div>
 </footer>
-
-<!-- ============ SHARED SVG DEFS: bag line-art ============ -->
-<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-  <defs>
-    <g id="bag-tote" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M40 60 L160 60 L172 158 L28 158 Z"/>
-      <path d="M64 60 V44 a36 26 0 0 1 72 0 V60"/>
-    </g>
-    <g id="bag-shoulder" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M46 74 L154 74 L166 150 L34 150 Z"/>
-      <path d="M70 74 V58 a30 20 0 0 1 60 0 V74"/>
-      <path d="M40 96 L30 20" />
-    </g>
-    <g id="bag-clutch" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M36 78 L164 78 L156 140 L44 140 Z"/>
-      <path d="M36 78 L100 52 L164 78"/>
-      <circle cx="100" cy="98" r="4" fill="currentColor" stroke="none"/>
-    </g>
-    <g id="bag-mini" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M56 82 L144 82 L152 146 L48 146 Z"/>
-      <path d="M74 82 V70 a26 18 0 0 1 52 0 V82"/>
-      <path d="M100 12 L100 40 M84 26 L116 26" />
-    </g>
-  </defs>
-</svg>
 
 <script src="assets/js/main.js" defer></script>
 </body>
