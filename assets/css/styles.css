@@ -168,24 +168,18 @@ input{ font:inherit; }
 }
 
 /* ---------- nav ---------- */
+/* Nav is always a solid light bar with black type/icons — deliberately not
+   transparent-over-photo, so it reads at full contrast against the black
+   page background no matter what's behind it or how it's being viewed. */
 .nav{
   position:fixed; top:0; left:0; right:0;
   height:var(--nav-h);
   z-index:900;
-  transition:background .4s ease, border-color .4s ease, box-shadow .4s ease;
+  background:var(--cream);
+  box-shadow:0 1px 0 rgba(10,9,8,.08);
+  transition:box-shadow .4s ease;
 }
-/* Always-on dark scrim behind the nav so icons/text stay legible no matter
-   how bright the photo underneath is (bright sky, white fabric, etc). This
-   is on top of nav--solid, not instead of it — solid state fades this out
-   since the solid background already provides contrast on its own. */
-.nav::before{
-  content:"";
-  position:absolute; inset:0;
-  background:linear-gradient(to bottom, rgba(3,3,2,.6) 0%, rgba(3,3,2,.15) 70%, rgba(3,3,2,0) 100%);
-  pointer-events:none;
-  transition:opacity .4s ease;
-}
-.nav--solid::before{ opacity:0; }
+.nav--solid{ box-shadow:0 2px 14px rgba(10,9,8,.18); }
 .nav__row{
   height:100%;
   display:flex;
@@ -208,16 +202,15 @@ input{ font:inherit; }
   font-family:var(--sans);
   font-weight:400;
   font-size:15px;
-  color:var(--cream);
+  color:var(--black);
   letter-spacing:.01em;
-  text-shadow:0 1px 6px rgba(0,0,0,.5);
   transition:opacity .3s ease;
 }
-.nav__link:hover{ opacity:.65; }
+.nav__link:hover{ opacity:.6; }
 .nav__contact{ font-size:14px; }
 
-.ico{ width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.5; filter:drop-shadow(0 1px 5px rgba(0,0,0,.5)); }
-.ico--menu{ display:inline-flex; flex-direction:column; justify-content:center; gap:5px; width:22px; height:15px; filter:drop-shadow(0 1px 5px rgba(0,0,0,.5)); }
+.ico{ width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.5; }
+.ico--menu{ display:inline-flex; flex-direction:column; justify-content:center; gap:5px; width:22px; height:15px; }
 .ico--menu i{ display:block; height:1.6px; background:currentColor; width:100%; }
 
 .brand{
@@ -225,17 +218,15 @@ input{ font:inherit; }
   font-weight:500;
   font-size:26px;
   letter-spacing:.28em;
-  color:var(--cream);
+  color:var(--black);
   text-align:center;
   white-space:nowrap;
-  text-shadow:0 1px 6px rgba(0,0,0,.5);
 }
 
 .nav__icon{
   position:relative;
   width:20px; height:20px;
-  color:var(--cream);
-  filter:drop-shadow(0 1px 5px rgba(0,0,0,.5));
+  color:var(--black);
   transition:opacity .3s ease;
 }
 .nav__icon svg{ width:100%; height:100%; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
@@ -248,12 +239,6 @@ input{ font:inherit; }
   color:var(--cream);
   font-size:10px; font-weight:600;
   display:flex; align-items:center; justify-content:center;
-}
-
-.nav--solid{
-  background:rgba(10,9,8,.88);
-  backdrop-filter:blur(10px);
-  box-shadow:0 1px 0 var(--hair);
 }
 
 /* mobile drawer */
